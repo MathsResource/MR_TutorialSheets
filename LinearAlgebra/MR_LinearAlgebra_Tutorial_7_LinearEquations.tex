@@ -1,0 +1,110 @@
+%% MR_LinearAlgebra_Tutorial_7_LinearEquations.pdf
+%% https://www.amazon.com/clouddrive/share/L2TdRTObXydeQjIzjkyGFrIFCWvTV25uB3VZE51XnTK
+%%
+
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{subfiles}
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{amsthm, amsmath}
+\usepackage{amsbsy}
+\usepackage{framed}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{red}\itshape,
+% underlined bold black keywords
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false,
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+,columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\title{Research notes: linear mixed effects models}
+\author{ } \date{ }
+
+
+\begin{document}
+\begin{enumerate}
+    \item Write down the coefficient matrix of the following homogeneous system of equations and then solve the system of equations: 
+
+
+\begin{align*}
+x_1 + 2x_2 &= 0\\
+x_1 + x_2 - 2x_3 &= 0\\
+x_2 + 2x_3 &= 0.
+\end{align*}
+
+\item  Consider the linear system of equations 
+\begin{align*}
+x_1 + 2x_2 &= 6\\
+x_1 + 2x_2 - 2x_3 &= 8\\
+x_2 + 2x_3 &= -2.
+\end{align*}
+\begin{enumerate}[(i)]
+\item Write down the augmented matrix of this system. 
+\item Does this system of equations have a unique solution? Justify your answer. 
+\item  Solve the system of equations, using any appropriate method. 
+\end{enumerate}
+\item  Consider the linear system
+\begin{align*}
+x_1 + x_3 &= 4\\
+2x_1 + 4x_2 + x_3 &= -3\\
+x_2 + 3x_3 &= 7.
+\end{align*}
+\begin{itemize}
+\item[(i)] Write down the coefficient matrix and the augmented matrix of this system.  %\marks{4}
+
+\item[(ii)]  What can you say about the solution set of the system? Justify your answer. %\marks{4}
+
+\item[(ii)] Solve the system of equations, using any appropriate method. Show your workings for each stage of the calculation.
+\end{itemize}
+%\item Consider the homogeneous system:
+%\begin{align*}
+%x_1 + x_3 &= 0\\
+%2x_1 + 4x_2 + x_3 &= 0\\
+%x_2 + 3x_3 &= 0.
+%\end{align*}
+%What can you say about its solution set?%\marks{4}
+
+
+
+
+\end{enumerate}
+\end{document}
