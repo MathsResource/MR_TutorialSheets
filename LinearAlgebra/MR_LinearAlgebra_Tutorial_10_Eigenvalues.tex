@@ -1,0 +1,84 @@
+%% MR_LinearAlgebra_Tutorial_10_Eigenvalues.pdf
+%% https://www.amazon.com/clouddrive/share/0UF6c6H2wwGShUTrQPNa0gjQVejelibkNgMTmRttkKJ
+%%
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{subfiles}
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{amsthm, amsmath}
+\usepackage{amsbsy}
+\usepackage{framed}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{red}\itshape,
+% underlined bold black keywords
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false,
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+,columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\title{Research notes: linear mixed effects models}
+\author{ } \date{ }
+
+
+\begin{document}
+\section*{Linear Algebra Tutorial Sheet : Eigen Values and Eigen Vectors}
+\begin{enumerate}
+\item Consider the following matrix $A$ 
+\[
+A = \left(\begin{array}{rrr} 
+0.5 & 1 & 1.5 \\
+-3  & -5 & -3\\
+3.5 & 5  & 2.5 \\ \end{array}\right)
+\]
+\begin{itemize}
+\item[(i)]  Determine the Characteristic Equation for $A$.
+\item[(ii)]  Determine the eigenvalues for $A$.
+\item[(iii)]  For each eigenvalues, compute the corresponding eigenvectors of $A$.
+
+\medskip\item[(iv)]  Diagonalise $A$; i.e, give a matrix $P$ and a diagonal matrix $D$, such that $A=PDP^{-1}$.
+
+\medskip \item[(v)]  Hence, evaluate $A^4$.
+\end{itemize} 
+
+
+\end{enumerate}
+\end{document}
