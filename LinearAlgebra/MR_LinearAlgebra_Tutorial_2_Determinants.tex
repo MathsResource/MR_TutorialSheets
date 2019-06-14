@@ -1,0 +1,106 @@
+%% MR_LinearAlgebra_Tutorial_2_Determinants.pdf
+%% https://www.amazon.com/clouddrive/share/te3vih7aHtCjCmTHAcQOT3f3HUIpMdrRFcBa8I3M1wz
+%%
+%%
+
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{subfiles}
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{amsthm, amsmath}
+\usepackage{amsbsy}
+\usepackage{framed}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{red}\itshape,
+% underlined bold black keywords
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false,
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+,columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\title{Research notes: linear mixed effects models}
+\author{ } \date{ }
+
+
+\begin{document}
+\section*{Linear Algebra Tutorial Sheet : Determinants}
+\begin{enumerate}
+    \item 
+
+
+You are given the following piece of information concerning a matrix $A$.
+\[|A| = \begin{vmatrix}
+0  &  4   & 7 \\
+-1  & -1  &  7\\
+1   & 5  &  1\\
+\end{vmatrix} = 4 \]
+
+\begin{itemize}
+\item[(i)] Hence or otherwise, state the determinant of matrices $B$ and $C$. Provide a brief justification for your answer.
+\[B = \left(\begin{array}{rrr}
+0  &  4   & 7 \\
+-3  & -1  &  7\\
+3   & 5  &  1\\
+\end{array}\right) \qquad C = \left(\begin{array}{rrr}
+0  &  8   & 14 \\
+-2  & -2  &  14\\
+2   & 10  &  2\\
+\end{array}\right) \]
+
+\item[(ii)] State the determinant of matrices $D$ and $E$. Provide a brief justification for your answer.
+\[D = \left(\begin{array}{rrr}
+0  &  4   & 8 \\
+-3  & -1  &  -2\\
+3   & 5  &  10\\
+\end{array}\right) \qquad E = \left(\begin{array}{rrr}
+0  &  8   & 14 \\
+0  & -2  &  14\\
+0   & 10  &  2\\
+\end{array}\right) \]
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}
+
+
+
