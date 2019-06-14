@@ -1,0 +1,102 @@
+%% MR_LinearAlgebra_Tutorial_9_VectorCalculations.pdf
+%% https://www.amazon.com/clouddrive/share/nJaswT5yJsJY5jQh6hcOliAPFfRRSWhYoNNQPr0Lqna
+
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{subfiles}
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{amsthm, amsmath}
+\usepackage{amsbsy}
+\usepackage{framed}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+basicstyle=\small, % print whole listing small
+keywordstyle=\color{red}\itshape,
+% underlined bold black keywords
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false,
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+frame=shadowbox,
+rulesepcolor=\color{black},
+,columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\title{Research notes: linear mixed effects models}
+\author{ } \date{ }
+
+
+\begin{document}
+\begin{enumerate}
+\item 
+Consider the three vectors in $\mathbb{R}^3$:
+$$
+u = (1, 2, 0), \quad v = (0, 1, 3),\quad w = (1, 2, 3).
+$$
+\begin{itemize}
+\item[(i)] (3 Marks) Evaluate $u+v$, $\|u\|$ and $\|v\|$,
+\smallskip \item[(ii)] (3 Marks) Evaluate $u\cdot v$, $u\times v$ and the angle between $u$ and $v$. %\marks{3}
+
+\smallskip\item[(iii)] Calculate the scalar triple product  $u\cdot(v \times w)$.%\marks{3}
+\smallskip\item[(iv)]  With reference to the answer for part (iii), state the scalar triple product  $u\cdot(w \times v)$. Justify your answer. %\marks{3}
+\end{itemize}
+\smallskip
+
+\item Consider the three vectors in $\mathbb{R}^3$:
+$$
+u = (1, 2, 0), \quad v = (0, 1, 3),\quad w = (1, 2, 3).
+$$
+\begin{itemize}
+\item[(i)] Evaluate $u+v$, $\|u\|$ and $\|v\|$,
+\smallskip \item[(ii)] 
+valuate $u\cdot v$, $u\times v$ and the angle between $u$ and $v$. %\marks{3}
+
+\smallskip\item[(iii)]  Calculate the scalar triple product  $u\cdot(v \times w)$.%\marks{3}
+\smallskip\item[(iv)]  With reference to the answer for part (iii), state the scalar triple product  $u\cdot(w \times v)$. Justify your answer. %\marks{3}
+\end{itemize}
+
+\item Proofs for Vector Products
+
+\begin{itemize}
+\item[(i)] Prove that for any $u,\:v,\:w,\:\in\mathbb{R}^3$
+and any $k\in\mathbb{R}$ we have \[(u\times v)\times w= (u\cdot w)v - (v\cdot w)u.\]
+
+\item[(ii)]  $(u+v)\times w=u\times w + v\times w$;
+
+\item[(iii)] $k(u\times v)=(ku)\times v = u\times (kv)$.
+\end{itemize} \
+\end{enumerate}
+\end{document}
