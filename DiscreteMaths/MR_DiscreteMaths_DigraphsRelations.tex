@@ -1,0 +1,114 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+
+\begin{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item 
+
+Suppose $A = \{1,2,3,4\}$. Consider the following relation in A
+
+\[ \{  (1,1),(2,2),(2,3),(3,2),(4,2),(4,4)\} \]
+
+Draw the direct graph of $A$. Based on the Digraph of $A$ discuss whether or not a relation that could be depicted by the digraph could be described as the following, justifying your answer.
+
+\begin{multicols}{2}
+\begin{itemize}
+\item[(a)] Symmetric
+\item[(b)] Reflexive 
+\item[(c)] Transitive
+\item[(d)] Antisymmetric
+\end{itemize}
+\end{multicols}
+%---------------- %
+\item Let S be a set and R be a relation on S. Explain what it means to say that R
+is
+\begin{multicols}{3}
+\begin{itemize}
+\item[(a)] reflexive,
+\item[(b)] symmetric,
+\item[(c)] transitive,
+\item[(d)] anti-symmetric,
+\item[(e)] an equivalence relation,
+\item[(f)] a partial order,
+\item[(g)] an order. 
+\end{itemize}
+\end{multicols}
+
+
+\item 
+Determine which of the following relations $ x R y$ are reflexive, transitive, symmetric, or antisymmetric on the following - there may be more than one characteristic. 
+\begin{multicols}{2}
+\begin{itemize} 
+\item[(a)] $x = y$
+\item[(b)] $x < y$
+\item[(c)] $x^2 = y^2$
+\item[(d)] $x \geq y$
+\end{itemize}
+\end{multicols}
+%---------------------------------
+\item 
+% 2007 Q8
+Given a flock of chickens, between any two chickens one of them is
+dominant. A relation, R, is defined between chicken x and chicken y as xRy if x is
+dominant over y. This gives what is known as a pecking order to the flock. Home
+Farm has 5 chickens: Amy, Beth, Carol, Daisy and Eve, with the following relations:
+
+\begin{itemize}
+\item Amy is dominant over Beth and Carol
+\item Beth is dominant over Eve and Carol
+\item Carol is dominant over Eve and Daisy
+\item Daisy is dominant over Eve, Amy and Beth
+\item Eve is dominant over Amy.
+\end{itemize}
+
+%% REST OF QUESTIOM
+
+\item 
+For $a, b \in Z$ define a R b to mean that a divides b.
+
+\begin{itemize}
+\item[(a)] State whether or not R is reflexive.
+\item[(b)] State whether or not R is symmetric.
+\item[(c)] State whether or not R is transitive.
+\end{itemize}
+% Solution: 
+% 
+% \begin{itemize}
+% \item[(a)]  Since 0 does not divide 0, therefore R is not reflexive.
+% \item[(b)] 2 divides 4 so 2 R 4. But 4 does not divide 2, so 4 R 2. Thus, R is not symmetric.
+% \item[(c)]  To see that R is transitive, let a, b, c be integers. Suppose that a R b and b R c. Thus,
+% a divides b and b divides c so there exist integers k and l such that b = ak and c = bl. This
+% gives c = bl = (ak)l = a(kl). Therefore, a divides c so a R c
+% \end{itemize}
+
+%--------------------------------------------------------%
+
+\item 
+Given the set $S =\{g,e,r,b,i,l\}$.
+\begin{itemize}
+\item[(a)] Describe how each subset of $S$ can be represented by using a 6 digit binary string
+\item[(b)] Write down the string corresponding to the subset $\{g,r,l\}$ and the subset corresponding to the string 010101.
+\item[(c)] What is the total number of subsets of S?
+\end{itemize}
+%----------------------------------------------------------------%
+
+\end{enumerate}
+\end{document}
