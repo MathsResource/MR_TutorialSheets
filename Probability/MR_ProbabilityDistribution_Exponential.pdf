@@ -1,0 +1,146 @@
+
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{chngpage}
+%\usepackage{bigints}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+\setcounter{MaxMatrixCols}{10}
+\begin{document}
+
+%% Exponential
+\begin{enumerate}
+
+%======================================================================================%
+
+\item Each 500-ft roll of sheet steel includes two flaws on average. What is the probability that as the sheet 
+steel is unrolled the first flaw occurs within the first 50-ft segment?
+
+% \begin{itemize}
+%
+%	\item Average per 500-ft roll = 2.0
+%
+%	\item average per 50-ft segment = 2.0/10 = 0.20
+%
+%	\item $P(X \leq 50)$
+%
+%	\[ = 1 - e^{-\lambda} = 1 - e^{-0.20}\] = 1-0.81873 = 0.18127
+%
+% \end{itemize}
+
+%======================================================================================%
+
+\item 
+The recovery time for a fracture of the lower leg for adults 
+is approximated by the exponential distribution, with a mean recovery (or healing) time of 80 days.
+Calculate the probabilities of the following recovery times.
+\begin{itemize}
+\item [(a)] A fracture is healed within 60 days.
+\item [(b)] A fracture takes at least 80 days to heal properly.
+\item [(c)] A fracture will heal within 75 days and 120 days.
+\end{itemize}
+
+
+%======================================================================================%
+\item 
+A machine is said to have a mean failure free lifetime of 2000 hours. What is the probability that the machine will last:
+
+\begin{itemize}
+
+	\item[(a)]	at least 1000 hours
+
+	\item[(b)]	at least 1500 hours
+
+	\item[(c)]	less than 800 hours
+
+	\item[(d)]	less than 1800 hours
+
+\end{itemize}
+
+%======================================================================================%
+\item 
+The average lifespan of a laptop is 5 year. You may assume that the lifespan of laptop computers follows an exponential distribution.
+
+\begin{enumerate}[(a)]
+
+	\item What is the probability that the lifespan of the laptop will be at least 6 years.
+
+	\item What is the probability that the lifespan of the laptop will not exceed 4 years.
+
+	\item What is the probability that the lifespan of the laptop will be between 5 years and 6 years.
+
+\end{enumerate}
+
+%======================================================================================%
+\item 
+
+
+An average of five calls per hour are received by a machine repair department. 
+
+Beginning the observation at any point in time, compute the following probabilites
+
+
+
+\begin{itemize} 
+
+	\item[(a)] that the first call for service will arrive within ten minutes.
+
+	\item[(b)] that the first call for service will not arrive for 30 minutes.
+
+\end{itemize}
+%======================================================================================%
+
+
+% \begin{itemize}
+%
+%	\item $\mu$ = Average per hour = 5.0
+%
+%	\item $\lambda= \mu$ = Average per half hour = 2.5
+%
+%	\item $P(X \leq 2.5) $
+%
+%	\[P(X \leq 2.5) = 1 - e^{-2.5} = 1 - 0.08208 = 0.91792\]
+%
+% \end{itemize}
+
+%======================================================================================%
+
+
+\newpage
+
+\item Faults occur in a fibre optic cable at the rate of 0.5 per 10KM of cable.  Calculate the probability that:
+
+
+
+\begin{itemize}
+
+	\item[(a)] Exactly 2 flaws will occur in a given 10KM section
+
+	\item[(b)] 4 or more flaws will occur in a given 10KM section
+
+	\item[(c)] Eircom are providing 100KM fibre optic connection between Limerick and Cork.  
+	What is the probability of 7 or more flaws in the 100KM section?	
+
+\end{itemize}				
+
+%======================================================================================%
+\end{enumerate}
+\end{document}
